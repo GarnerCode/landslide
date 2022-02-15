@@ -1,0 +1,106 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body {
+  background-color: #251c2b;
+}
+
+body header {
+  color: white;
+  padding-top: 30vh;
+  height: 100vh;
+}
+
+body header h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #ff6600), to(#ff00b9));
+  background: linear-gradient(90deg, #020024 0%, #ff6600 0%, #ff00b9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(5px 5px #16111a);
+          filter: drop-shadow(5px 5px #16111a);
+  font-size: 5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  -webkit-animation: ease-in-out 1.5s fadeIn;
+          animation: ease-in-out 1.5s fadeIn;
+}
+
+body header h2 {
+  font-family: 'Poppins', sans-serif;
+  opacity: 0%;
+  -webkit-animation: ease-in-out 1.5s fadeIn forwards;
+          animation: ease-in-out 1.5s fadeIn forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+body main {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+body main #landMono {
+  font-family: 'Roboto Mono', monospace;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+body main #landMono h1 {
+  font-size: 8em;
+  margin-top: 25vh;
+  font-weight: bold;
+}
+
+body main #landMono h1 span {
+  color: #ff4400;
+}
+
+body main #landMono h2 {
+  color: #646464;
+  margin-bottom: 2em;
+}
+
+body main #landMono a {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  color: #646464;
+  border: 2px solid #646464;
+  padding: 0.2em;
+  font-size: 2em;
+}
+
+body main #landMono a:hover {
+  color: #ff4400;
+  border: 2px solid #ff4400;
+  padding: 0.3em;
+}
+
+body main #landMono img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
